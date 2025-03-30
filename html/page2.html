@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objet Tactile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        body { text-align: center; padding: 50px; margin: 0; }
+        .container { max-width: 800px; }
+        .frame { border: 2px solid #000; padding: 20px; margin-top: 20px; border-radius: 10px; }
+        .logo-port { width: auto; height: 65px; }
+        .navbar { background-color: white !important; position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
+        .container-md { padding-left: 0; }
+        .content { padding-top: 100px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-md">
+          <a class="navbar-brand" href="../html/page1.html"><img src="../assets/imglogo.jpg" alt="logo" class="logo-port"></a>
+        </div>
+    </nav>
+    <div class="container content">
+        <h1>Notre Objet Tactile</h1>
+        <div class="mt-4 text-center">
+            <model-viewer src="../assets/lunette2.glb"
+                alt="Un modèle 3D de voiture"
+                auto-rotate
+                camera-controls
+                background-color="#E5DCF1"
+                style="width: 100%; height: 500px;">
+            </model-viewer>
+        </div>
+        <div class="frame mt-3">
+            <p>Nos lunettes intelligentes révolutionnent l’interaction grâce à leur écran tactile 
+                de dernière génération. D’un simple geste, l’utilisateur peut naviguer dans une 
+                interface intuitive, ajuster des paramètres ou afficher des informations en temps réel. 
+                Un bouton latéral active un hologramme interactif, offrant une nouvelle dimension 
+                d’affichage pour la communication et l’assistance. En complément, une IA vocale intégrée 
+                retranscrit les conversations sous forme de sous-titres dynamiques sur l’écran, rendant 
+                l’expérience accessible aux personnes malentendantes. Un autre bouton permet d’ajuster le 
+                volume sonore, garantissant un confort d’utilisation optimal.
+                </p>
+        </div>
+    </div>
+</body>
+</html>
